@@ -32,8 +32,9 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-          <%= user.name %> 
+          <%= user.fullName %> 
           </a>
+          <img src="<%= user.profileImageURL %>" style="width: 50px;" alt="">
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/user/logout">Logout</a></li>
           </ul>

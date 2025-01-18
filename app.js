@@ -36,7 +36,6 @@ app.use(express.static(path.resolve("./public")));
 app.get("/", async (req, res) => {
   const allBlogs = await Blog.find({});
   const user = await User.find({});
-  console.log(user)
   res.render("home", {
     user: user,
     blogs: allBlogs,
